@@ -1,0 +1,102 @@
+{
+  "_version": "3.0.0",
+  "identification": {
+    "title": "DEVELOPMENT",
+    "id": "DEVELOPMENT-flp",
+    "entityType": "bundle"
+  },
+  "payload": {
+    "catalogs": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "DEVELOPMENT-catalog",
+          "title": "{{title}}",
+          "entityType": "catalog",
+          "i18n": "i18n/catalog.properties"
+        },
+        "payload": {
+          "viz": [
+            {
+              "appId": "DEVELOPMENT.admin-books",
+              "vizId": "Books-manage"
+            },
+            {
+              "appId": "DEVELOPMENT.browse",
+              "vizId": "Books-display"
+            }
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "DEVELOPMENT-group",
+          "title": "{{title}}",
+          "entityType": "group",
+          "i18n": "i18n/group.properties"
+        },
+        "payload": {
+          "viz": [
+            {
+              "id": "DEVELOPMENTadmin-books-001",
+              "appId": "DEVELOPMENT.admin-books",
+              "vizId": "Books-manage"
+            },
+            {
+              "id": "DEVELOPMENTbrowse-001",
+              "appId": "DEVELOPMENT.browse",
+              "vizId": "Books-display"
+            }
+          ]
+        }
+      }
+    ],
+    "sites": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "DEVELOPMENT-site",
+          "entityType": "site",
+          "title": "DEVELOPMENT",
+          "description": "A simple CAP project."
+        },
+        "payload": {
+          "config": {
+            "ushellConfig": {
+              "renderers": {
+                "fiori2": {
+                  "componentData": {
+                    "config": {
+                      "applications": {
+                        "Shell-home": {}
+                      },
+                      "enableSearch": true,
+                      "enablePersonalization": true,
+                      "enableSetTheme": true,
+                      "enableSetLanguage": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "groupsOrder": ["DEVELOPMENT-group"],
+          "sap.cloud.portal": {
+            "config": {
+              "theme.id": "sap_horizon",
+              "theme.active": [
+                "sap_horizon",
+                "sap_horizon_dark",
+                "sap_horizon_hcw",
+                "sap_horizon_hcb"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

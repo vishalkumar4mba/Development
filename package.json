@@ -1,0 +1,40 @@
+{
+  "name": "DEVELOPMENT",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^8",
+    "express": "^4",
+    "@sap/xssec": "^4",
+    "@cap-js/hana": "^1",
+    "@cap-js/audit-logging": ">=0",
+    "@cap-js/notifications": "*"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@cap-js/cds-types": "^0.7.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "sapux": [
+    "app/admin-books",
+    "app/browse"
+  ],
+  "cds": {
+    "requires": {
+      "auth": "xsuaa",
+      "connectivity": true,
+      "destinations": true,
+      "html5-repo": true,
+      "portal": true,
+      "application-logging": true
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  }
+}
