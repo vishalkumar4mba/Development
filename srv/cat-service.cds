@@ -16,5 +16,5 @@ service CatalogService {
     quantity: Integer  @mandatory
   ) returns { stock: Integer };
 
-  event OrderedBook : { book: Books:ID; quantity: Integer; buyer: String };
+  event OrderedBook : { book: Books:ID; quantity: Integer; buyer: Integer };
 }
