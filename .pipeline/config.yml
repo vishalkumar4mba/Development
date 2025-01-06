@@ -30,7 +30,7 @@ stages:
 #  Integration:
 #    credentials:
 #      - alias: 'mySystemAlias'
-#        credentialId: 'mySystemCredentialsId'
+#        credentialId: 'my-defaul-id'
 
 #  Release:
 #    cfTargets:
@@ -39,4 +39,4 @@ stages:
 #        apiEndpoint: 'https://'
 #        appName: 'myAppName'
 #        manifest: 'manifest.yml'
-#        credentialsId: 'myDeploymentCredentialsId'
+#        credentialsId: 'my-defaul-id'
