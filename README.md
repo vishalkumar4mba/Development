@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to your new project Dev CI CD.
+Welcome to your new project Dev CI CD. CI CD configured.
 
 It contains these folders and files, following our recommended project layout:
 
