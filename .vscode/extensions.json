@@ -4,7 +4,7 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"mechatroner.rainbow-csv",
-		"qwtel.sqlite-viewer",
+		"qwtel.sqlite-viewer"
 		"humao.rest-client"
 	],
 	"unwantedRecommendations": [
