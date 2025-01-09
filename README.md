@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to your new project Dev CI CD. Demo
+Welcome to your new project Dev CI CD. Demo-2
 
 It contains these folders and files, following our recommended project layout:
 
